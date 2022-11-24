@@ -13,6 +13,7 @@ ROU = 0
 BRA = 0
 ARG = 0
 
+# Contador de nadadores
 for team in Team:
     match (team):
         case "ROC":
@@ -32,6 +33,7 @@ for team in Team:
         case "ARG":
             ARG = ARG + 1
 
+# Muestra de grafico de torta
 divisiones = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 paises = ['ROC', 'USA', 'AUS', 'FRA', 'AUS', 'HUN', 'AUS', 'ROU', 'BRA', 'ARG' ]
 colores = ['red', 'blue', '#FCBA2D', '#F28773', '#8b0000', 'green', 'yellow', 'gray', '#80ff00', '#40CFFF']
