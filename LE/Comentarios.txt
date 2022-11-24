@@ -1,0 +1,17 @@
+Primer cuatrimestre:
+
+_Archivos
+_Clases y objetos
+_Estructuras
+_Funciones
+_Listas simples y dobles
+_Maquinas de estados
+_Punteros
+
+Segundo cuatrimestre:
+
+_Python
+
+--Ver como censurar una contraseña--
+--Powershell--
+--BAT / CMD--

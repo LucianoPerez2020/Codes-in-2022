@@ -1,0 +1,168 @@
+<!DOCTYPE html> <!-- le digo que es un archivo .html -->
+<html> <!-- etiqueta de todo el código -->
+<head>
+<!-- "cabeza" acá dentro van a ir muchas etiquetas que no se pueden ver si uno es un usuario normal que entre a la página como, por ejemplo, los metadatos -->
+	<meta charset="utf-8">
+	<!-- esta etiqueta de metadato me permite usar caracteres especiales en mi página sin que me aparezcan símbolos raros para reemplazar a los mismos -->		
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- adapta todas las resoluciones de las etiquetas de una página a una definición de pantalla diferente de la original para que nada quede desbalanceado, es decir, deja ver de una misma manera una página con una definición cuadrada que con una rectangular -->
+	<meta name="keywords" content="personal, proyecto, HTML, CSS, SoyDalto, código">
+	<meta name="description" content="Página personal para terminar de aprender y enteder el HTML">
+	<meta name="author" content="Pérez Luciano">
+	<meta name="robots" content="index"> 
+	<!-- o "noindex" es que la página este o no indexada ¿Que quiero decir con esto? Es decirle al navegador si cuando alguien busque mi página la muestre (index) o no la muestre (noindex) en la busqeda. -->
+	<!-- los metadatos son elementos HTML que tienen como función describir la página web que los contiene. Estos son usados por los motores de búsqueda para hacer un análisis de dicho sitio web en cuanto a qué tipo de contenido se ofrece y cuál es la temática que allí se maneja. Con esto conseguirías que a travez del analisis de la página gracias a los metadatos harías que tengas mas probabilidades de que aparezca tu pagina por sobre otras, o incluso, sobre la misma que la tuya si no tuviera esas palabras claves. 
+		-->
+	<link rel="icon" href="logo.ico">
+	<!-- le doy un icono a mi página -->
+	<title>Scrípts</title> 
+	<!-- le doy un nombre a mi página (el nombre aparece en la pestaña de la misma) -->
+</head>
+<body> <!-- aca va todo lo que se puede ver en la página -->
+	<header> <!-- esto es el encabezado -->
+		<nav> <!-- y esto la barra de navegación -->
+			<ul> <!-- lista desordenada (osea con puntos) -->
+				<li><!-- línea de lista -->
+					<a href="C:\Users\luperez\Desktop\OneDrive - Escuela Tecnica Roberto Rocca\Desarrollo web\Curso HTML\index.html">La primera</a></li>
+					<li><a href="C:\Users\luperez\Desktop\OneDrive - Escuela Tecnica Roberto Rocca\Desarrollo web\Curso HTML\second page.html">La segunda</a></li>
+					<li><a href="C:\Users\luperez\Desktop\OneDrive - Escuela Tecnica Roberto Rocca\Desarrollo web\Curso HTML\1;52,47.html">La tercera</a></li>
+					<!-- "<a href=""></a>" se usa para poner una palabra y que esta al hacerle click me redirija hacia donde el "href" me indique -->
+			</ul>
+		</nav>
+	</header>
+	<article> 
+	<!-- esto es un articulo, dividir mi texto con las propiedades del mismo para que despues en el css lo pueda cambiar de forma mas comoda -->
+		<section>
+		<!-- divide un articulo en más partes (estas se denominan secciones) -->
+			<h1>
+				Acá voy a encontrar todo lo que necesite del HTML ;)
+			</h1>
+			<h2>
+				Aprender CSS cuando cuando termine esta página
+			</h2>
+			<p> <!-- me dá el formato de un párrafo -->
+				<a href="#conclusion">Conclusion de la nota</a><br>
+				<!-- "br" me premite bajar un reglon del texto -->
+				<!-- con "#" yo "asigno" la palabra clave para que la página sepa que cuando ponga "id="conclusion"" me rediriga hacia esa ubicación -->
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<h3 id="conclusion">Conclusión</h3>
+				<!-- "id" me sirve para que dentro de la misma página redirigirme a un lugar, como por ejemplo el de la conclusion de una tesis -->
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<ol>
+				<!-- Lista ordenada (osea con números) -->
+					<li>A</li>
+					<li>B</li>
+					<li>C</li>
+					<li>D</li>
+					<li>E</li>
+				</ol>
+			</p>
+		</section>
+	</article>
+	<aside>
+	<!-- el aside es como la nota de información extra en los libros que se ponen al costado del texto principal, esto tambien nos sirve para el CSS ya que nos divide aun mas las etiquetas -->
+		<h1>
+		 	Esto es el aside 
+		</h1>
+		<h5>
+		 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</h5>
+		<table> <!-- le doy el formate de una tabla (como exel) -->  
+		<tr> <!-- le digo que esto es una fila vertical --> 
+			<td><b>Prueba<b/></td> <!-- "td" es el campo (el cuadradito) de la tabla -->
+			<td><b>Tiempo<b/></td>
+			<td><b>Marca nacional<b/></td>
+		</tr>
+		<tr> <!-- aca estoy sumando otra fila vertical --> 
+			<td><b>50 Mariposa<b/></td> 
+			<td><b>29 corto<b/></td>
+			<td><b>30,50<b/></td>
+		</tr>
+		<tr> 
+			<td><b>50 Espalda<b/></td>
+			<td><b>29,90<b/></td>
+			<td><b>32,50<b/></td>
+		<tr>
+			<td><b>50 Pecho<b/></td>
+			<td><b>33 corto<b/></td>
+			<td><b>34;50<b/></td>
+		</tr>
+		<tr>
+			<td><b>50 Libre</b></td>
+			<td><b>26 largo</b></td>
+			<td><b>25;94</b></td>
+		</tr>
+	</table>
+	</aside>
+	<div>
+		<video src="video1.mp4" controls>
+	</div>
+	<div>
+		<audio src="audio1.mp3" controls>
+	</div>
+	<hr>
+	<!-- "hr" mee divide la página con una linea -->
+	<form method="post"> 
+	<!-- el method="post" es para que si apreto enviar me mande la informacion a donde yo quiera y previo a esto borra en los campos los datos colocados -->
+		<input type="text" required=""><br>
+		<input type="password" required=""><br>
+		<input type="number" required=""><br>
+		<input type="email" required=""><br>
+		<input type="color"><br>
+		<input type="range" min="10" max="100"><br>
+		<input type="date"><br>
+		<input type="time"><br>		
+		<textarea></textarea><br>
+		<input type="submit"><br>
+		<input type="button" value="Click">
+		<!-- 
+		"input" entrada de...
+		"type" tipo de entrada
+		"requeried" le digo que es de caracter obligatorio llenar el campo
+		-->
+	</form>
+	<footer> <!-- pie de página -->
+		<h4> <!-- se pone información como el numero de teléfono, correo o alguna forma de contactarse el usuario con el "dueño" de la pagina -->
+			Si tenes dudas contactactanos a nuestro <a href="http://images7.memedroid.com/images/UPLOADED962/5e99ef5ed8fea.jpeg" target="_BLANK">mail</a> o <a href="https://www.instagram.com/luciano_perez15/">instagram.</a>
+		</h4>
+	</footer>
+	<img src="https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png" alt="Logo de equipo" title="PandaGame">
+	<!-- así es como pongo una imagen, lo que tiene mejor (si es que se lo sumo) es que con el "alt" si la imagen no se carga el usuario puede llegar a tener una diea de que se trata la misma y con el "title" me muestra un mini texto si pongo el cursor sobre la imagen. Esto no es necesariamente obligatorio ponerlo, pero para el CEO esta muy bueno. -->
+</body>
+</html>

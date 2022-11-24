@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="dias, horas, colores, formulario, edad">
+	<meta name="description" content="Página personal para aprender y enteder HTML">
+	<meta name="author" content="Pérez Luciano">
+	<meta name="robots" content="index"> <!-- o "noindex" es que la página este o no indexada ¿Que quiero decir con esto? Es decirle al navegador si cuando alguien busque mi página la muestre (index) o no la muestre (noindex) en la busqeda. -->
+	<!-- los metadatos son eso justamente, datos que no se ven de forma visual para un usuario que entra a la página, pero si son "vistos" por así decir para el navegador, esto hace que cosas como por ejemplo las palabras clave le de una idea de mas o menos de que trata la pagina al mismo (al navegador). Con esto conseguirías que si una persona busca algo y en esa búsqueda están las mismas palabras que tus palabras claves dentro de los metadatos haría que tengas mas probabilidades de que aparezca tu pagina por sobre otras, o incluso, sobre la misma que la tuya si no tuviera esas palabras claves. -->
+</head>
+<body>
+	<h1>Esta es la segunda pagina</h1>
+	<div><video src="baby.MP4" controls></div> <!-- ¿Porque tengo que poner al video dentro de una etiqeuta "div" para que me parazcan las siguientes lineas? -->
+	<div><audio src="naaa.MP3" controls></div>
+	<form method="post"> <!-- el method="post" es para que si apreto enviar me mande la informacion a donde yo quiera y previo a esto borra en los campos los datos colocados -->
+		<input type="text" required=""><br>
+		<input type="password" required=""><br>
+		<input type="number" required=""><br>
+		<input type="email" required=""><br>
+		<input type="color"><br>
+		<input type="range" min="10" max="100"><br>
+		<input type="date"><br>
+		<input type="time"><br>		
+		<textarea></textarea><br>
+		<input type="submit">
+		<!--
+		<input type="button" value="Click"><br>
+		-->
+	</form><hr>
+	<a href="index.html">(primer página)</a><br>
+	<a href="1;52,47.html">(1;52,47)</a><br>
+	<a href="ejemplo de problema.html" target="_BLANK">(ejemplo de problema)</a>
+</body>
+</html>

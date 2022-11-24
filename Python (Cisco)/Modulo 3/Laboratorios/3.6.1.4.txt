@@ -1,0 +1,43 @@
+Rebanadas: continuación
+Si omites el start en tu rebanada, se supone que deseas obtener un segmento que comienza en el elemento con índice 0.
+
+En otras palabras, la rebanada sería de esta forma:
+
+my_list[:end]
+
+
+es un equivalente más compacto de:
+
+my_list[0:end]
+
+
+Observa el fragmento de código a continuación:
+
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[:3]
+print(new_list)
+
+
+Es por esto que su salida es: [10, 8, 6].
+
+Del mismo modo, si omites el end en tu rebanada, se supone que deseas que el segmento termine en el elemento con el índice len(my_list).
+
+En otras palabras, la rebanada sería de esta forma:
+
+my_list[start:]
+
+
+es un equivalente más compacto de:
+
+my_list[start:len(my_list)]
+
+
+Observa el siguiente fragmento de código:
+
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[3:]
+print(new_list)
+
+
+Por lo tanto, la salida es: [4, 2].
+

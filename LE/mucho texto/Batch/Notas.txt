@@ -1,0 +1,11 @@
+_Si no especifico el formato va a agarrar el primer nombre que encuentre en la carpeta de arriba hacia abajo.
+_Si el documento no esta en la misma carpeta tampoco lo abrira.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+@echo off (para que no me muestre texto de más)
+mode (dimenciones de la ventana)
+title (nombre de la pestaña)
+echo (imprimir un texto)
+echo. (salto de linea)
+pause (no termine el programa de inmediato)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 

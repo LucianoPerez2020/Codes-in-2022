@@ -1,0 +1,93 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#pruebas con matrices numpy
+
+array = np.array([[3,45,5],[6,89,78]], dtype=np.int64) #no solo creo una matriz sino que tambien le indico el tipo para mayor control
+print(array)
+
+b = np.random.random((5, 6))
+print("matriz b: ", b)
+
+a = np.arange(0, 50, 5)
+print("la matriz a antes:",a)
+a = a.reshape(2,5)
+print("la matriz a despues:")
+print(a)
+
+
+#pruebas con dataframes panda
+datafrA = pd.DataFrame(np.array([[1,5,6],[89,43,2],[7,12,0]]))
+print(datafrA)
+
+datafrB = pd.DataFrame(np.random.random((4,4)))
+print("segunda matriz:")
+print(datafrB)
+
+#print("las estadisticas de la primera son:", datafrA.describe())
+print("datos de la segunda fila: ")
+print(datafrB.loc[1])
+
+datafrA = pd.DataFrame(np.array([[1,5,6],[89,43,2],[7,12,0]]))
+print("hay alguno vacio en la primera?:")
+print(datafrA.isnull())
+
+
+#prueba con matplot
+
+#diagrama de linea
+x = np.array([0,2,4,6,8,10])
+y = np.array([30,10,15,5,20,0])
+plt.plot(x,y, color='green', linewidth=3,label='prueba') #para crear la figura base con los ejes, color y etiquetas
+plt.title('Lineas pa probar')
+plt.ylabel('Eje Y')
+plt.xlabel('Eje X')
+
+plt.legend()
+plt.grid()
+plt.show()
+
+
+#diagrama de barra
+x2 = np.array([0,2,4,6,8,10])
+y2 = np.array([3,9,6,8,1,100])
+plt.bar(x2,y2, label='barra', color="blue")
+plt.title('Barras')
+plt.ylabel('Eje Y')
+plt.xlabel('Eje X')
+
+plt.grid()
+plt.show()
+
+
+#histograma
+data = [12,45,98,76,75,87,64,43,12,54,32,87,9,87,7,23,12,43,14,32,67,22,43,76,54]
+div = [0,10,20,30,40,50,60,70,80,90,100]
+plt.hist(data, div, histtype='bar', color='green', rwidth=0.8)
+plt.grid()
+plt.show()
+
+#dispersion
+xa = np.array([3,6,8,9,2,4])
+ya = np.array([5,6,2,9,7,5])
+xb = np.array([23,45,34])
+yb = np.array ([12,16,23])
+
+plt.scatter(xa, ya, label='dispersion a', color= 'red')
+plt.scatter(xb, yb, label='dispersion b', color= 'orange')
+
+plt.title('Dispersion')
+plt.ylabel('Eje Y')
+plt.xlabel('Eje X')
+
+plt.grid()
+plt.show()
+
+#grafico de torta
+goles = [34,5,60,2,4,15]
+quien =["Juan", "Violeta", "Alex", "Isabel", "Pedro", "Maria"]
+colores = ["#FFC300", "#DAF7A6", "#FF5733", "#C70039", "#900C3F", "#581845"]
+plt.pie(goles, labels=quien, colors=colores, autopct="%0.1f %%")
+plt.grid()
+plt.show()
