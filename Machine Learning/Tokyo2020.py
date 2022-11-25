@@ -34,13 +34,13 @@ for team in Team:
             ARG = ARG + 1
 
 # Muestra de grafico de torta
-divisiones = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-paises = ['ROC', 'USA', 'AUS', 'FRA', 'AUS', 'HUN', 'AUS', 'ROU', 'BRA', 'ARG' ]
-colores = ['red', 'blue', '#FCBA2D', '#F28773', '#8b0000', 'green', 'yellow', 'gray', '#80ff00', '#40CFFF']
+divisiones = [ROC, USA, AUS, FRA, HUN, ROU, BRA, ARG]
+paises = ['ROC', 'USA', 'AUS', 'FRA', 'HUN', 'ROU', 'BRA', 'ARG' ]
+colores = ['red', 'blue', '#FCBA2D', '#F28773', '#8b0000', 'green', 'yellow', '#40CFFF']
 
 #Configurar las características del gráfico
 plt.pie(divisiones, labels=paises, colors=colores, startangle=90, 
-        shadow=False, explode=(0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01), autopct='%1.2f%%')
+        shadow=False, explode=(0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01), autopct='%1.2f%%')
 
 #Definir titulo
 plt.title('Tokio 2020')
